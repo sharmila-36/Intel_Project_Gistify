@@ -6,11 +6,14 @@
 
 ## 🚀 Features
 
-- 🎙️ **Audio Transcription** – Upload or fetch audio from YouTube links.
-- 🧠 **AI Summarization** – Summarizes transcribed text for quick understanding.
-- 🌐 **Translation** – Translates output to multiple languages using Deep Translator.
-- 📝 **PDF Export** – Save your transcripts and summaries as downloadable PDFs.
-- 🔐 **Session Support** – Keeps user data consistent across interactions.
+- 📹 YouTube video summarization  
+- 📄 PDF document summarization  
+- 🔊 Voice-based summary (Text-to-Speech)  
+- ❓ MCQ generation  
+- 🤖 Doubt-solving chatbot  
+- 📚 Glossary term extraction  
+- 🌐 Multilingual translation  
+- 📝 PDF export
 
 ---
 
