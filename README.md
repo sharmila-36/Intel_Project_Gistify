@@ -33,27 +33,18 @@ Gistify is a smart web application that transcribes, summarizes, and translates 
 ## 📦 Installation
 
 ### 1. Clone the repo
-
-```bash
 git clone https://github.com/sharmila-36/Intel_Project_Gistify.git
 cd Intel_Project_Gistify
-2. Install dependencies
-bash
-Copy
-Edit
+
+### 2. Install dependencies
 pip install -r requirements.txt
-3. Run the app
-bash
-Copy
-Edit
+
+### 3. Run the app
 python app.py
 Then open your browser and go to:
 http://127.0.0.1:5000
 
-📁 Project Structure
-plaintext
-Copy
-Edit
+## 📁 Project Structure
 Intel_Project_Gistify/
 │
 ├── templates/             # HTML files (e.g., welcome.html, index.html)
@@ -61,11 +52,8 @@ Intel_Project_Gistify/
 ├── app.py                 # Flask backend
 ├── requirements.txt       # Python dependencies
 ├── README.md              # Project documentation
-📝 License
-This project is open-source for educational and personal use.
-Feel free to explore and adapt it with credit.
 
-👩‍💻 Author
+## 👩‍💻 Author
 Sharmila D
 Final Year B.Tech CSE Student
 Passionate about AI, Web Development & Smart Solutions 💡
