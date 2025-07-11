@@ -42,19 +42,31 @@ pip install -r requirements.txt
 
 ### 3. Run the app
 python app.py
+
 Then open your browser and go to:
+
 http://127.0.0.1:5000
 
 ## 📁 Project Structure
 Intel_Project_Gistify/
+
 │
+
 ├── templates/             # HTML files (e.g., welcome.html, index.html)
+
 ├── static/                # CSS, JS, images
+
 ├── app.py                 # Flask backend
+
 ├── requirements.txt       # Python dependencies
+
 ├── README.md              # Project documentation
+
 
 ## 👩‍💻 Author
 Sharmila D
+
 Final Year B.Tech CSE Student
+
 Passionate about AI, Web Development & Smart Solutions 💡
+
