@@ -1,6 +1,6 @@
-# Intel_Project_Gistify
+# Gistify - "Summarise Smarter"
 
-**Gistify** is a smart web-based application that transcribes, summarizes, and translates spoken content using OpenAI's Whisper model. It supports audio uploads and YouTube links, provides concise AI-generated summaries, enables multilingual translation, and allows PDF exports — all through a clean and user-friendly interface.
+**Gistify** is a smart web-based application that transcribes, summarizes, and translates spoken content from **YouTube videos** using OpenAI's Whisper model. It provides concise AI-generated summaries, multilingual translation, and PDF export — all through a clean and user-friendly interface.
 
 ---
 
