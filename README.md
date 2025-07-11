@@ -34,6 +34,7 @@ Gistify is a smart web application that transcribes, summarizes, and translates 
 
 ### 1. Clone the repo
 git clone https://github.com/sharmila-36/Intel_Project_Gistify.git
+
 cd Intel_Project_Gistify
 
 ### 2. Install dependencies
