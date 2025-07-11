@@ -1,9 +1,6 @@
 # Intel_Project_Gistify
-Gistify is a web-based app that transcribes and summarizes audio using OpenAI's Whisper, with features like AI Summary, PDF export, and multilingual translation.
 
-# Gistify
-
-Gistify is a smart web application that transcribes, summarizes, and translates spoken content using OpenAI's Whisper model. It supports audio uploads and YouTube links, generating clean, readable summaries with optional PDF export — all from a user-friendly interface.
+**Gistify** is a smart web-based application that transcribes, summarizes, and translates spoken content using OpenAI's Whisper model. It supports audio uploads and YouTube links, provides concise AI-generated summaries, enables multilingual translation, and allows PDF exports — all through a clean and user-friendly interface.
 
 ---
 
