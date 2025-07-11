@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gistify – Welcome</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="feature-mindmap">
+    <!-- Left Side Features (3 items) -->
+    <div class="feature-column left">
+      <div class="feature feature-left animate-float delay-1">
+        <i class="fas fa-video"></i> YouTube Summarizer
+      </div>
+      <div class="feature feature-left animate-float delay-2">
+        <i class="fas fa-language"></i> Translation Support
+      </div>
+      <div class="feature feature-left animate-float delay-3">
+        <i class="fas fa-pen-fancy"></i> AI Notes Generator
+      </div>
+    </div>
+
+    <!-- Right Side Features (3 items) -->
+    <div class="feature-column right">
+      <div class="feature feature-right animate-float delay-4">
+        <i class="fas fa-list-check"></i> MCQ Generator
+      </div>
+      <div class="feature feature-right animate-float delay-5">
+        <i class="fas fa-book-open"></i> Glossary Creator
+      </div>
+      <div class="feature feature-right animate-float delay-6">
+        <i class="fas fa-robot"></i> Doubt-Solving Assistant
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <img src="{{ url_for('static', filename='images/logo15-Photoroom.png') }}" alt="Gistify Logo" class="logo" />
+    <h1 class="title">GISTIFY</h1>
+    <p class="tagline">SUMMARIZE SMARTER</p>
+    <a href="{{ url_for('go_to_main') }}" class="btn">Let’s Get Started</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <div class="logo-container">
+        <img src="/static/images/logo15-Photoroom.png" alt="Gistify Logo" class="logo-img">
+        <span class="logo-text">Gistify</span>
+    </div>
+   <!-- ❓ Help Button -->
+<div id="helpIcon" class="help-icon" onclick="toggleHelpPopup()">❓</div>
+
+<!-- 💬 Help Popup -->
+<div id="helpPopup" class="help-popup">
+    <div class="help-content">
+        <span class="close-btn" onclick="toggleHelpPopup()">×</span>
+        <h3>How to Use Gistify</h3>
+        <ul>
+            <li>📥 Paste a YouTube link and click <strong>Summarize</strong></li>
+            <li>🌐 Use the dropdown to translate the summary</li>
+            <li>📝 Click buttons to generate MCQs, Notes, and Glossary</li>
+            <li>💬 Use the chat box to ask questions about the summary</li>
+        </ul>
+    </div>
+</div>
+
+</header>
+<h2>YouTube Video Summary</h2>
+
+<!-- 🆕 Input Form -->
+<section class="input-section" style="text-align:center; margin: 30px;">
+    <form method="POST" action="/" style="display: inline-block;">
+        <input type="text" name="youtube_url" placeholder="Enter YouTube URL" required class="input-text" style="width: 300px; padding: 10px;">
+        <button type="submit" class="submit-btn" style="padding: 10px 20px;">🎯 Summarize</button>
+    </form>
+</section>
+
+
+
+{% if summary %}
+<!-- 🧠 Summary Section -->
+<div class="summary-box">
+    <div class="summary-header">🧠 Summary</div>
+    <div class="summary-content" id="summaryText">{{ summary }}</div>
+
+    <!-- 📥 Combined PDF -->
+    <div style="margin-top: 10px;">
+        <a href="/download-summary-notes-glossary">📥 Download Summary + Notes + Glossary PDF</a>
+    </div>
+
+    <!-- 🎧 Voice Control -->
+    <h5 class="summary-title">🎧 Listen to Summary</h5>
+    <div>
+        <button onclick="readSummary()" class="btn btn-outline-primary">🔊 Read Aloud</button>
+        <button onclick="pauseSummary()" class="btn btn-outline-warning">⏸️ Pause</button>
+        <button onclick="resumeSummary()" class="btn btn-outline-info">▶️ Resume</button>
+        <button onclick="stopSummary()" class="btn btn-outline-danger">⏹️ Stop</button>
+    </div>
+
+    <!-- 🧠 AI Feature Buttons -->
+    <div style="margin-top: 20px;">
+        <form action="/generate-mcq" method="get" style="display: inline;">
+            <button type="submit">📝 Generate MCQs</button>
+        </form>
+        <form action="/generate-notes" method="get" style="display: inline;">
+            <button type="submit">🗒️ Generate Notes</button>
+        </form>
+        <form action="/generate-glossary" method="get" style="display: inline;">
+            <button type="submit">📚 Generate Glossary</button>
+        </form>
+    </div>
+
+    <!-- 🌐 Translation UI -->
+    <form method="POST" action="/translate" style="margin-top: 20px;">
+        <select name="language" class="input-select" style="padding: 10px;">
+            <option value="" disabled selected>Select Language</option>
+            <option value="tamil">Tamil</option>
+            <option value="hindi">Hindi</option>
+            <option value="telugu">Telugu</option>
+            <option value="malayalam">Malayalam</option>
+        </select>
+        <button type="submit" class="submit-btn" style="padding: 8px 15px;">🌐 Translate</button>
+    </form>
+</div>
+{% endif %}
+
+{% if translated_summary %}
+<!-- 🌐 Translated Summary -->
+<div class="summary-box">
+    <div class="summary-header">🌐 Translated Summary</div>
+    <div class="summary-content" style="white-space: pre-wrap;">{{ translated_summary }}</div>
+</div>
+{% endif %}
+
+{% if notes %}
+<div class="summary-box">
+    <div class="summary-header">🗒️ AI-Generated Study Notes</div>
+    <div class="summary-content" style="white-space: pre-wrap;">{{ notes }}</div>
+</div>
+{% endif %}
+
+{% if glossary %}
+<div class="summary-box">
+    <div class="summary-header">📚 Glossary</div>
+    <div class="summary-content" style="white-space: pre-wrap;">{{ glossary }}</div>
+</div>
+{% endif %}
+
+{% if mcqs %}
+<!-- 📝 MCQ Section -->
+<div>
+    <div class="section-title">📝 Practice Questions</div>
+    <div class="card-body">
+        <form id="quizForm">
+            {% for q in mcqs %}
+            {% set q_index = loop.index %}
+            <div class="mcq-card">
+                <div class="mcq-question">Q{{ q_index }}: {{ q.question }}</div>
+                <p class="mcq-instruction">Instruction: Choose the best answer</p>
+                {% for option in q.options %}
+                <label class="mcq-option">
+                    <input type="radio" name="q{{ q_index }}" value="{{ option | e }}">
+                    <span class="custom-radio"></span>
+                    {{ option }}
+                </label>
+                {% endfor %}
+            </div>
+            {% endfor %}
+            <div class="submit-container">
+                <button type="submit" class="submit-btn">Submit Quiz</button>
+            </div>
+        </form>
+
+        <div id="quizResult" style="display:none;">
+            <h5 class="summary-title">✅ Your Score</h5>
+            <p class="summary-title" style="font-size: 1.2rem;"><span id="score"></span> / {{ mcqs | length }}</p>
+            <div id="answers"></div>
+            <div><a href="/download-mcq-pdf">📥 Download Raw MCQs as PDF</a></div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<!-- 💬 Chat Interface -->
+<div>
+    <div class="summary-title">💬 Ask a Question</div>
+    <div id="chatConversation" class="chat-box"></div>
+    <form id="chatForm" class="chat-input-container">
+        <button type="button" onclick="clearChat()" class="clear-btn">🗑️</button>
+        <input type="text" id="userQuestion" placeholder="Ask a question from the summary..." required>
+        <button type="submit" class="send-btn">&#10148;</button>
+    </form>
+</div>
+
+<!-- 🧠 JS: Voice -->
+<script>
+let utterance;
+function readSummary() {
+    const text = document.getElementById("summaryText").textContent;
+    utterance = new SpeechSynthesisUtterance(text);
+    speechSynthesis.cancel();
+    speechSynthesis.speak(utterance);
+}
+function pauseSummary() {
+    if (speechSynthesis.speaking && !speechSynthesis.paused) speechSynthesis.pause();
+}
+function resumeSummary() {
+    if (speechSynthesis.paused) speechSynthesis.resume();
+}
+function stopSummary() {
+    if (speechSynthesis.speaking) speechSynthesis.cancel();
+}
+</script>
+
+<!-- 🧠 JS: MCQ Quiz Logic -->
+{% if mcqs and mcqs is iterable %}
+<script>
+const correctAnswers = {{ mcqs | tojson | safe }};
+document.getElementById("quizForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    let score = 0;
+    let resultHTML = "";
+    correctAnswers.forEach((q, index) => {
+        const name = "q" + (index + 1);
+        const selected = document.querySelector(`input[name="${name}"]:checked`);
+        const userAnswer = selected ? selected.value : "Not Answered";
+        const correct = q.answer;
+        if (userAnswer === correct) score++;
+        resultHTML += `<p><strong>Q${index + 1}:</strong> ${q.question}<br>
+            <span style="color:${userAnswer === correct ? 'green' : 'red'}">
+            Your Answer: ${userAnswer}<br>Correct Answer: ${correct}</span></p>`;
+    });
+    document.getElementById("score").innerText = score;
+    document.getElementById("answers").innerHTML = resultHTML;
+    document.getElementById("quizResult").style.display = "block";
+    document.querySelectorAll("#quizForm input").forEach(el => el.disabled = true);
+});
+</script>
+{% endif %}
+
+<!-- 💬 JS: Chat -->
+<script>
+function appendMessage(sender, message) {
+    const chatBox = document.getElementById("chatConversation");
+    const msgWrapper = document.createElement("div");
+    msgWrapper.classList.add("chat-message", sender);
+    const bubble = document.createElement("div");
+    bubble.classList.add("chat-bubble");
+    bubble.innerText = message;
+    msgWrapper.appendChild(bubble);
+    chatBox.appendChild(msgWrapper);
+    chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+document.getElementById("chatForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const input = document.getElementById("userQuestion");
+    const question = input.value.trim();
+    if (!question) return;
+    appendMessage("user", question);
+    input.value = "";
+    fetch("/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question: question })
+    })
+    .then(res => res.json())
+    .then(data => appendMessage("bot", data.answer || "Sorry, I couldn't understand."))
+    .catch(() => appendMessage("bot", "❌ Error fetching response."));
+});
+</script>
+<script>
+function clearChat() {
+    const chatBox = document.getElementById("chatConversation");
+    if (chatBox) {
+        chatBox.innerHTML = ""; // Clear all messages
+    }
+}
+</script>
+
+
+
+<!-- 🔁 Help Popup Toggle Script -->
+<script>
+function toggleHelpPopup() {
+    const popup = document.getElementById("helpPopup");
+    popup.style.display = popup.style.display === "block" ? "none" : "block";
+}
+</script>
+<!-- 🔁 Help Popup Toggle Script -->
+<script>
+function toggleHelpPopup() {
+    const popup = document.getElementById("helpPopup");
+    popup.style.display = popup.style.display === "block" ? "none" : "block";
+}
+</script>
+
+<!-- ✅ Add this new script to clear chat -->
+<script>
+function clearChat() {
+    const chatBox = document.getElementById("chatConversation");
+    if (chatBox) {
+        chatBox.innerHTML = "";
+    }
+}
+</script>
+
+<footer class="site-footer">
+    <p>&copy; 2025 YouTube Summarizer</p>
+</footer>
+</body>
+
+
+</html>

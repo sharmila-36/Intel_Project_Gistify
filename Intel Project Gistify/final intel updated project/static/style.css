@@ -1,0 +1,181 @@
+/* Reset & Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+              url('/static/images/bg11.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1s ease-in;
+  position: relative;
+  overflow-y: auto;
+}
+
+.container {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  color: white;
+  animation: slideUp 1.5s ease-in-out;
+}
+
+.logo {
+  width: 220px;
+  margin-bottom: 8px; /* ← Reduced from 20px to 8px */
+  animation: zoomIn 1s ease;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+
+
+.tagline {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.btn {
+  padding: 12px 30px;
+  background-color: #ffffff;
+  color: #001f3f;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.btn:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3.5s ease-in-out infinite;
+}
+
+.feature-mindmap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 1200px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.feature-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-column.left {
+  align-items: flex-start;
+}
+
+.feature-column.right {
+  align-items: flex-end;
+}
+
+
+.feature {
+  width: fit-content;
+  max-width: 250px;
+  background: rgba(255, 255, 255, 0.07);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 12px 18px;
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1.2s ease forwards;
+}
+.feature i {
+  margin-right: 8px;
+  color: #ddd;
+}
+
+
+/* Delay classes for staggered animation */
+.delay-1 { animation-delay: 0.4s; }
+.delay-2 { animation-delay: 0.6s; }
+.delay-3 { animation-delay: 0.8s; }
+.delay-4 { animation-delay: 1s; }
+.delay-5 { animation-delay: 1.2s; }
+.delay-6 { animation-delay: 1.4s; }
+
+.feature:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
