@@ -48,20 +48,16 @@ Then open your browser and go to:
 http://127.0.0.1:5000
 
 ## 📁 Project Structure
+
+```plaintext
 Intel_Project_Gistify/
-
 │
-
 ├── templates/             # HTML files (e.g., welcome.html, index.html)
-
 ├── static/                # CSS, JS, images
-
 ├── app.py                 # Flask backend
-
 ├── requirements.txt       # Python dependencies
-
 ├── README.md              # Project documentation
-
+```
 
 ## 👩‍💻 Authors
 
