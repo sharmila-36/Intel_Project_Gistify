@@ -63,10 +63,13 @@ Intel_Project_Gistify/
 ├── README.md              # Project documentation
 
 
-## 👩‍💻 Author
-Sharmila D
+## 👩‍💻 Authors
 
-Final Year B.Tech CSE Student
+- **Shamsu Nisha N** – Backend Developer (Team Lead)  
+  Developed core backend features: MCQ generation, glossary, chatbot.
 
-Passionate about AI, Web Development & Smart Solutions 💡
+- **Sharmila D** – AI & System Designer  
+  Designed architecture, integrated OpenVINO with LLMs for summarization.
 
+- **Tharani V S** – UI/UX Developer  
+  Built intuitive frontend for smooth user experience.
