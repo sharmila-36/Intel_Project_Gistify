@@ -34,17 +34,13 @@ Gistify is a smart web application that transcribes, summarizes, and translates 
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/YOUR_USERNAME/Gistify.git
-cd Gistify
-2. Install dependencies
-bash
-Copy
-Edit
+git clone https://github.com/sharmila-36/Intel_Project_Gistify.git
+cd Intel_Project_Gistify
+
+### 2. Install dependencies
 pip install -r requirements.txt
-3. Run the app
-bash
-Copy
-Edit
+
+### 3. Run the app
 python app.py
 Then open your browser and go to:
 http://127.0.0.1:5000
