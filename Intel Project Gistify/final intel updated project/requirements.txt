@@ -1,0 +1,10 @@
+Flask
+Flask-Session
+openai-whisper
+yt-dlp
+xhtml2pdf
+langchain
+transformers
+optimum[openvino]
+deep-translator
+nltk
