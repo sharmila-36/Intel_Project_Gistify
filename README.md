@@ -1,4 +1,4 @@
-# Intel_Unnati_Industrial_Training_Program_2025
+# Intel Unnati Industrial Training Program 2025
 
 ## Gistify – "Summarise Smarter"
 
