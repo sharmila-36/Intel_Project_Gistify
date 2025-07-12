@@ -135,7 +135,7 @@ _The clean and simple landing page where users begin the summarization journey._
 ### 🔗 2. YouTube URL Input Page  
 _Users paste the link of the YouTube video for summarization._
 
-![YouTube Input](https://github.com/sharmila-36/Intel_Project_Gistify/blob/eb003a6491ad7bc4e95d1d1e79642d41e7293b23/Intel%20Project%20Gistify/final%20intel%20updated%20project/output%20screen%20shots/input_page.png)
+![YouTube Input](https://github.com/sharmila-36/Intel_Project_Gistify/blob/main/Intel%20Project%20Gistify/final%20intel%20updated%20project/output%20screen%20shots/input_page.png.png)
 
 ---
 
