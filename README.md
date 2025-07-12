@@ -45,7 +45,7 @@ Below is the functional workflow of the Gistify system:
 <img width="776" height="433" alt="intel process flow" src="https://github.com/user-attachments/assets/c9426067-97ad-4408-8541-c7ae4b0cb8bd" />
 
 
-## 🛠 Tech Stack Used
+## Tech Stack Used
 
 ### ⚙ Backend & Core Technologies
 
