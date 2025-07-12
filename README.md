@@ -121,7 +121,7 @@ Run the app:
 ```plaintext
 python app.py
 ```
-## 🖼️ Screenshots
+## Screenshots
 
 Below are key UI screens and features of **Gistify**:
 
