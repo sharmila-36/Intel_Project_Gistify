@@ -9,7 +9,7 @@
 - [Project Overview](#project-overview)  
 - [Folder Structure](#folder-structure) 
 - [Project Flow](#project-flow)
-- [Technologies Used](#technologies-used)  
+- [Technologies Used](#tech-stack-used)  
 - [Installation](#installation)  
 - [Results](#results)     
 - [Authors](#authors)
@@ -45,16 +45,23 @@ Below is the functional workflow of the Gistify system:
 <img width="776" height="433" alt="intel process flow" src="https://github.com/user-attachments/assets/c9426067-97ad-4408-8541-c7ae4b0cb8bd" />
 
 
-## Technologies Used
+## 🛠 Tech Stack Used
 
-- **Python**
-- **Flask** & **Flask-Session**
-- **OpenAI Whisper**
-- **yt-dlp**
-- **xhtml2pdf**
-- **LangChain**, **Transformers**, **Optimum (OpenVINO)**
-- **Deep Translator**
-- **NLTK**
+### ⚙ Backend & Core Technologies
+
+| Technology               | Purpose in Project |
+|--------------------------|--------------------|
+| *Python*               | Main programming language used to develop both backend logic and AI features. |
+| *Flask*                | Lightweight web framework used to create the application backend and API routes. |
+| *Flask-Session*        | Handles session management to store user data like summary and translations during interaction. |
+| *OpenAI Whisper*       | Converts YouTube video audio into accurate transcribed text for further processing. |
+| *yt-dlp*               | Downloads audio from YouTube videos, used as input for Whisper transcription. |
+| *LangChain*            | Framework for chaining together LLM components — used here for MCQ, notes, and glossary generation. |
+| *Transformers (Hugging Face)* | Provides access to pretrained NLP models like T5 for summarization. |
+| *Optimum + OpenVINO*   | Optimizes and accelerates inference for the summarization model (T5) using OpenVINO. |
+| *Deep Translator*      | Enables summary translation into regional languages like Hindi, Tamil, Telugu, Malayalam, and Kannada. |
+| *NLTK*                 | Natural Language Toolkit used for cleaning transcript text (e.g., sentence tokenization, stopword removal). |
+| *xhtml2pdf*            | Converts the final summary into a downloadable and printable PDF. |
 ---
 
 ## Installation  
