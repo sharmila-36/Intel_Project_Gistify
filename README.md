@@ -58,18 +58,13 @@ Below is the functional workflow of the Gistify system:
 - **NLTK**
 ---
 
-## Installation
+## Installation  
+To get started, clone the repository and install the required dependencies:
 
 ```plaintext
-1. Clone the repo:
-   git clone https://github.com/sharmila-36/Intel_Project_Gistify.git
-   cd Intel_Project_Gistify
-
-2. Install dependencies:
-   pip install -r requirements.txt
-
-3. Run the app:
-   python app.py
+git clone https://github.com/sharmila-36/Intel_Project_Gistify.git  
+cd Intel_Project_Gistify  
+pip install -r requirements.txt  
 ```
 
 ## Results
