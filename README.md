@@ -8,10 +8,10 @@
 ## Table of Contents  
 - [Project Overview](#project-overview)  
 - [Folder Structure](#folder-structure) 
-- [Project Flow](#project-flow)  
+- [Project Flow](#project-flow)
+- [Technologies Used](#technologies-used)  
 - [Installation](#installation)  
-- [Results](#results)  
-- [Technologies Used](#technologies-used)    
+- [Results](#results)     
 - [Authors](#authors)
 
 ---
