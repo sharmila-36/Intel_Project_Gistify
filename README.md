@@ -7,14 +7,12 @@
 ---
 ## Table of Contents  
 - [Project Overview](#project-overview)  
-- [Folder Structure](#folder-structure)  
+- [Folder Structure](#📁-Folder-Structure)  
 - [Project Flow](#project-flow)  
 - [Installation](#installation)  
 - [Usage](#usage)  
 - [Results](#results)  
-- [Technologies Used](#technologies-used)  
-- [Contributing](#contributing)  
-- [License](#license)  
+- [Technologies Used](#technologies-used)    
 - [Authors](#authors)
 
 ---
