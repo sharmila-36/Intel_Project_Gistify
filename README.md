@@ -16,7 +16,7 @@
 
 ---
 ## Project Overview  
-Gistify is a Python-Flask-based tool that automates summarization and translation tasks using AI. It supports various input formats like YouTube videos and PDF documents, and provides summarized output in text, speech, and downloadable formats. It also includes educational features such as MCQ generation, a glossary extractor, and a chatbot for solving user queries.
+Gistify is a Python-Flask-based tool that automates summarization and translation tasks using AI. It supports input formats like YouTube videos and provides summarized output in text, speech, and downloadable formats. It also includes educational features such as MCQ generation, a glossary extractor, and a chatbot for solving user queries.
 
 ### Key Modules:  
 - 📹 YouTube Video Summarization  
