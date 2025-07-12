@@ -1,13 +1,13 @@
 # Intel_Unnati_Industrial_Training_Program_2025
 
-# Gistify - "Summarise Smarter"
+## Gistify – "Summarise Smarter"
 
 **Gistify** is a smart web-based application that transcribes, summarizes, and translates spoken content from **YouTube videos** using OpenAI's Whisper model. It provides concise AI-generated summaries, multilingual translation, and PDF export — all through a clean and user-friendly interface.
 
 ---
 ## Table of Contents  
 - [Project Overview](#project-overview)  
-- [Folder Structure](#📁-Folder-Structure)  
+- [Folder Structure](#folder-structure) 
 - [Project Flow](#project-flow)  
 - [Installation](#installation)  
 - [Usage](#usage)  
@@ -30,7 +30,7 @@ Gistify is a Python-Flask-based tool that automates summarization and translatio
 - 📝 PDF Export of Summaries  
 
 ---
-## 📁 Folder Structure
+## Folder Structure
 
 ```plaintext
 Intel_Project_Gistify/
@@ -46,7 +46,7 @@ Below is the functional workflow of the Gistify system:
 <img width="776" height="433" alt="intel process flow" src="https://github.com/user-attachments/assets/c9426067-97ad-4408-8541-c7ae4b0cb8bd" />
 
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Python**
 - **Flask** & **Flask-Session**
@@ -58,7 +58,7 @@ Below is the functional workflow of the Gistify system:
 - **NLTK**
 ---
 
-## 📦 Installation
+## Installation
 
 ### 1. Clone the repo
 git clone https://github.com/sharmila-36/Intel_Project_Gistify.git
@@ -71,10 +71,6 @@ pip install -r requirements.txt
 ### 3. Run the app
 python app.py
 
-Then open your browser and go to:
-
-http://127.0.0.1:5000
-
 ## Results
 
 - ✅ Summarized and translated content displayed on the web interface.  
@@ -84,7 +80,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 👩‍💻 Authors
+## Authors
 
 - **Shamsu Nisha N** – Backend Developer (Team Lead)  
   Developed core backend features: MCQ generation, glossary, chatbot.
@@ -94,3 +90,4 @@ http://127.0.0.1:5000
 
 - **Tharani V S** – UI/UX Developer  
   Built intuitive frontend for smooth user experience.
+  ---
