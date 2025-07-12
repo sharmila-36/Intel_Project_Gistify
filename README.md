@@ -68,7 +68,7 @@ pip install -r requirements.txt
 ```
 Run the app:
 ```plaintext
-   python app.py
+python app.py
 ```
 
 ## Results
