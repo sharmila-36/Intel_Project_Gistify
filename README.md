@@ -112,6 +112,73 @@ Run the app:
 ```plaintext
 python app.py
 ```
+## 🖼️ Screenshots
+
+Below are key UI screens and features of **Gistify**:
+
+---
+
+### 🏠 1. Home / Welcome Page  
+_The clean and simple landing page where users begin the summarization journey._
+
+![Home Page](https://github.com/sharmila-36/Intel_Project_Gistify/blob/eb003a6491ad7bc4e95d1d1e79642d41e7293b23/Intel%20Project%20Gistify/final%20intel%20updated%20project/output%20screen%20shots/frontpage_ui.png)
+
+---
+
+### 🔗 2. YouTube URL Input Page  
+_Users paste the link of the YouTube video for summarization._
+
+![YouTube Input](https://github.com/sharmila-36/Intel_Project_Gistify/blob/eb003a6491ad7bc4e95d1d1e79642d41e7293b23/Intel%20Project%20Gistify/final%20intel%20updated%20project/output%20screen%20shots/input_page.png)
+
+---
+
+### 📄 3. Summary Output Page  
+_AI-generated summary based on the transcribed content._
+
+![Summary Output](https://github.com/sharmila-36/Intel_Project_Gistify/blob/eb003a6491ad7bc4e95d1d1e79642d41e7293b23/Intel%20Project%20Gistify/final%20intel%20updated%20project/output%20screen%20shots/summary_output.png)
+
+---
+
+### 🌐 4. Translated Summary Page  
+_Summary translated into selected regional language._
+
+![Translated Summary](https://github.com/sharmila-36/Intel_Project_Gistify/blob/eb003a6491ad7bc4e95d1d1e79642d41e7293b23/Intel%20Project%20Gistify/final%20intel%20updated%20project/output%20screen%20shots/translated_summary.png)
+
+
+
+---
+### 📝 5. MCQ Generation Page  
+_Automatically generated multiple-choice questions based on the summarized content._
+
+![MCQ Page](https://github.com/sharmila-36/Intel_Project_Gistify/blob/eb003a6491ad7bc4e95d1d1e79642d41e7293b23/Intel%20Project%20Gistify/final%20intel%20updated%20project/output%20screen%20shots/mcq_page.png)
+
+
+### 📝 6. Generate Notes Page  
+_Notes and multiple-choice questions extracted from the summary._
+
+![Notes Page](https://github.com/sharmila-36/Intel_Project_Gistify/blob/eb003a6491ad7bc4e95d1d1e79642d41e7293b23/Intel%20Project%20Gistify/final%20intel%20updated%20project/output%20screen%20shots/sample_notes.png)
+
+---
+
+### 📚 7. Glossary Terms Page  
+_Terms with definitions automatically generated from the summary._
+
+![Glossary Page](https://github.com/sharmila-36/Intel_Project_Gistify/blob/eb003a6491ad7bc4e95d1d1e79642d41e7293b23/Intel%20Project%20Gistify/final%20intel%20updated%20project/output%20screen%20shots/glossary.png)
+
+---
+
+### 💬 8. Chatbot Interface  
+_An interactive chatbot that answers questions based on the content._
+
+![Chatbot UI](https://github.com/sharmila-36/Intel_Project_Gistify/blob/eb003a6491ad7bc4e95d1d1e79642d41e7293b23/Intel%20Project%20Gistify/final%20intel%20updated%20project/output%20screen%20shots/chatbot.png)
+
+---
+
+### 📥 9. Downloadable PDF Output  
+_All generated content (summary, glossary, notes, MCQs) is compiled into a PDF._
+
+🔗 [Click here to view/download the sample PDF](https://github.com/sharmila-36/Intel_Project_Gistify/blob/eb003a6491ad7bc4e95d1d1e79642d41e7293b23/Intel%20Project%20Gistify/final%20intel%20updated%20project/output%20screen%20shots/sample_notes.pdf)
+
 
 ## Results
 
