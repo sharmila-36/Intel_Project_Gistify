@@ -89,4 +89,5 @@ python app.py
 
 - **Tharani V S** – UI/UX Developer  
   Built intuitive frontend for smooth user experience.
-  ---
+
+---
