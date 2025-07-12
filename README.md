@@ -66,6 +66,10 @@ git clone https://github.com/sharmila-36/Intel_Project_Gistify.git
 cd Intel_Project_Gistify  
 pip install -r requirements.txt  
 ```
+Run the app:
+```plaintext
+   python app.py
+```
 
 ## Results
 
