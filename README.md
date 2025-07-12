@@ -2,7 +2,15 @@
 
 ## Gistify – "Summarise Smarter"
 
-**Gistify** is a smart web-based application that transcribes, summarizes, and translates spoken content from **YouTube videos** using OpenAI's Whisper model. It provides concise AI-generated summaries, multilingual translation, and PDF export — all through a clean and user-friendly interface.
+## 📌 Project Overview
+
+Today, students rely on YouTube and other video platforms more than ever to learn new topics, catch up on missed lessons, or prepare for exams. While the content is easily accessible, actually learning from long, information-heavy videos can be time-consuming and overwhelming. Students often find it hard to take proper notes, stay focused through lengthy lectures, or quickly revise key points before an exam.
+
+In many cases, these videos are not available in the student’s native language, making it harder to understand or retain the content. Even if a student watches a video, they might still have doubts or wish they had a quick summary, important definitions, or practice questions based on the lecture.
+
+That’s where **Gistify** comes in. It was built to make this whole process easier and smarter. Instead of just watching and re-watching videos, Gistify helps students turn any YouTube lecture into a more useful learning format. It uses modern AI tools to break down the content into clear summaries, support different Indian languages, and even help students test their understanding with quizzes and instant doubt solving.
+
+This project combines various AI technologies — from speech recognition and summarization to large language models (LLMs) — and integrates them into a simple, user-friendly web application. Gistify aims to support smarter, faster, and more accessible video-based learning for students across different backgrounds.
 
 ---
 ## Table of Contents  
@@ -10,7 +18,8 @@
 - [Folder Structure](#folder-structure) 
 - [Process Flow](#process-flow)
 - [Tech Stack Used](#tech-stack-used)  
-- [Installation](#installation)  
+- [Installation](#installation)
+- [Screenshots](#screenshots)
 - [Results](#results)     
 - [Authors](#authors)
 
