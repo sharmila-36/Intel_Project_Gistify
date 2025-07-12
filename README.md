@@ -10,7 +10,6 @@
 - [Folder Structure](#folder-structure) 
 - [Project Flow](#project-flow)  
 - [Installation](#installation)  
-- [Usage](#usage)  
 - [Results](#results)  
 - [Technologies Used](#technologies-used)    
 - [Authors](#authors)
