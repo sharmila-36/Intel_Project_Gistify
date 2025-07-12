@@ -121,7 +121,7 @@ Below are key UI screens and features of **Gistify**:
 ### 🏠 1. Home / Welcome Page  
 _The clean and simple landing page where users begin the summarization journey._
 
-![Home Page](https://github.com/sharmila-36/Intel_Project_Gistify/blob/eb003a6491ad7bc4e95d1d1e79642d41e7293b23/Intel%20Project%20Gistify/final%20intel%20updated%20project/output%20screen%20shots/frontpage_ui.png)
+![Home Page](https://github.com/sharmila-36/Intel_Project_Gistify/blob/eb003a6491ad7bc4e95d1d1e79642d41e7293b23/Intel%20Project%20Gistify/final%20intel%20updated%20project/output%20screen%20shots/input_page.png.png)
 
 ---
 
@@ -135,7 +135,7 @@ _Users paste the link of the YouTube video for summarization._
 ### 📄 3. Summary Output Page  
 _AI-generated summary based on the transcribed content._
 
-![Summary Output](https://github.com/sharmila-36/Intel_Project_Gistify/blob/eb003a6491ad7bc4e95d1d1e79642d41e7293b23/Intel%20Project%20Gistify/final%20intel%20updated%20project/output%20screen%20shots/summary_output.png)
+![Summary Output](https://github.com/sharmila-36/Intel_Project_Gistify/blob/eb003a6491ad7bc4e95d1d1e79642d41e7293b23/Intel%20Project%20Gistify/final%20intel%20updated%20project/output%20screen%20shots/summary_output.png.png)
 
 ---
 
