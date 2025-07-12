@@ -19,7 +19,6 @@ Gistify solves this by turning any YouTube lecture into a simplified, student-fr
 - 📝 PDF Export of Summaries 
 
 
-Built using speech recognition, LLMs, and summarization tools, Gistify makes video-based learning faster, smarter, and more accessible for diverse learners.
 ---
 ## Table of Contents  
 - [Project Overview](#project-overview)  
