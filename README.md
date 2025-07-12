@@ -41,9 +41,45 @@ Intel_Project_Gistify/
 ├── README.md              # Project documentation
 ```
 ## Project Flow  
-Below is the functional workflow of the Gistify system:
+
 <img width="776" height="433" alt="intel process flow" src="https://github.com/user-attachments/assets/c9426067-97ad-4408-8541-c7ae4b0cb8bd" />
 
+The Gistify application follows a modular pipeline that processes YouTube educational videos into interactive, multilingual learning content. Here’s the complete flow:
+
+1. *🔗 YouTube URL Input*
+   - The user enters a YouTube video link into the web interface built with Flask.
+
+2. *🎧 Audio Extraction (yt-dlp)*
+   - The backend extracts only the audio stream using yt-dlp, ensuring faster and lightweight downloads.
+
+3. *🗣 Transcription (Whisper)*
+   - The audio is transcribed into English text using OpenAI's Whisper model.
+
+4. *🧹 Transcript Cleaning (NLTK + Regex)*
+   - The raw transcript is cleaned to remove filler words, repeated phrases, and punctuation issues using pre_clean_transcript() and clean_summary().
+
+5. *🧠 Summarization (T5 + OpenVINO)*
+   - The cleaned transcript is passed into a T5 summarization model optimized with OpenVINO for fast CPU inference, producing a concise summary.
+
+6. *🌐 Translation (Deep Translator)*
+   - The summary can be manually translated into Tamil, Hindi, Telugu, Malayalam, and Kannada by splitting it into chunks and translating each.
+
+7. *📝 AI Content Generation (LangChain + Groq)*
+   - The summary is used as context to generate:
+     - Multiple-Choice Questions (MCQs)
+     - Important Notes
+     - Glossary terms  
+   - These are generated using Groq-hosted LLaMA-3 via LangChain.
+
+8. *🤖 Doubt-Solving Chatbot*
+   - A chatbot (LLM-based via LangChain) answers student questions in natural language, using the summary as context.
+
+9. *📥 PDF Export (xhtml2pdf)*
+   - The summary, notes, glossary, and quiz can be downloaded as a single PDF for offline study.
+
+10. *🖥 User Interface*
+    - The Flask-based frontend displays all results: summary, translation, MCQs, chatbot, and download buttons, with text-to-speech support and floating chatbot.
+---
 
 ## Tech Stack Used
 
