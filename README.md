@@ -9,7 +9,7 @@
 - [Project Overview](#project-overview)  
 - [Folder Structure](#folder-structure) 
 - [Project Flow](#project-flow)
-- [Technologies Used](#tech-stack-used)  
+- [Tech Stack Used](#tech-stack-used)  
 - [Installation](#installation)  
 - [Results](#results)     
 - [Authors](#authors)
