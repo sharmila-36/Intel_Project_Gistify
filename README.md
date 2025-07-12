@@ -156,7 +156,7 @@ _Automatically generated multiple-choice questions based on the summarized conte
 ### 📝 6. Generate Notes Page  
 _Notes and multiple-choice questions extracted from the summary._
 
-![Notes Page](https://github.com/sharmila-36/Intel_Project_Gistify/blob/eb003a6491ad7bc4e95d1d1e79642d41e7293b23/Intel%20Project%20Gistify/final%20intel%20updated%20project/output%20screen%20shots/sample_notes.png)
+![Notes Page](https://github.com/sharmila-36/Intel_Project_Gistify/blob/eb003a6491ad7bc4e95d1d1e79642d41e7293b23/Intel%20Project%20Gistify/final%20intel%20updated%20project/output%20screen%20shots/generated_notes.png)
 
 ---
 
