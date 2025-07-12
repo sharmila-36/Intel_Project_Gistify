@@ -1,4 +1,6 @@
-# Intel_Unnati_Industrial_Training_Program_2025 : Gistify - "Summarise Smarter"
+# Intel_Unnati_Industrial_Training_Program_2025
+
+Gistify - "Summarise Smarter"
 
 **Gistify** is a smart web-based application that transcribes, summarizes, and translates spoken content from **YouTube videos** using OpenAI's Whisper model. It provides concise AI-generated summaries, multilingual translation, and PDF export — all through a clean and user-friendly interface.
 
