@@ -60,16 +60,17 @@ Below is the functional workflow of the Gistify system:
 
 ## Installation
 
-### 1. Clone the repo
-git clone https://github.com/sharmila-36/Intel_Project_Gistify.git
+```plaintext
+1. Clone the repo:
+   git clone https://github.com/sharmila-36/Intel_Project_Gistify.git
+   cd Intel_Project_Gistify
 
-cd Intel_Project_Gistify
+2. Install dependencies:
+   pip install -r requirements.txt
 
-### 2. Install dependencies
-pip install -r requirements.txt
-
-### 3. Run the app
-python app.py
+3. Run the app:
+   python app.py
+```
 
 ## Results
 
