@@ -8,7 +8,7 @@
 ## Table of Contents  
 - [Project Overview](#project-overview)  
 - [Folder Structure](#folder-structure) 
-- [Project Flow](#project-flow)
+- [Process Flow](#process-flow)
 - [Tech Stack Used](#tech-stack-used)  
 - [Installation](#installation)  
 - [Results](#results)     
@@ -40,7 +40,7 @@ Intel_Project_Gistify/
 ├── requirements.txt       # Python dependencies
 ├── README.md              # Project documentation
 ```
-## Project Flow  
+## Process Flow  
 
 <img width="776" height="433" alt="intel process flow" src="https://github.com/user-attachments/assets/c9426067-97ad-4408-8541-c7ae4b0cb8bd" />
 
